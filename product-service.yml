@@ -1,12 +1,12 @@
 # ===================================================================
-# EShoppingZone - Profile Service Centralized Configuration
+# EShoppingZone - Product Service Centralized Configuration
 # ===================================================================
 server:
-  port: 8082
+  port: 8083
 
 spring:
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/profile_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/product_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
     username: ${MYSQL_USER:root}
     password: ${MYSQL_PASSWORD:root}
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -20,6 +20,6 @@ spring:
 
 info:
   app:
-    name: "Profile Service"
-    description: "EShoppingZone User Profile and Address Microservice"
+    name: "Product Service"
+    description: "EShoppingZone Product Catalog Microservice"
     version: "1.0.0"
